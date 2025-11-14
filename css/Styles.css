@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+/* Configuramos colores */
+:root {
+  --color-primary: #D9F1FF; /* Color principal: Fondo y elementos dominantes */ 
+  --color-secondary: #003366; /* Color secundario: Botones, títulos, destacados */
+  --color-accent: #FF7B00; /* Color de acento: Botones principales y acentos visuales */
+  --color-neutral-light: #FFFFFF; /* Color neutro claro: Fondo, tarjetas, espacios */
+  --color-neutral-dark: #2C2C2C; /* Color neutro oscuro: Texto principal */
+  --color-confirmation: #3CB371; /* Color confirmación: Mensajes de éxito o confirmación */
+  --color-error: #E63946; /* Color error: Errores o avisos */
+}
+
+/*Damos estilo a la classe header*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: 10px 60px;
+    height: 110px;
+    box-sizing: border-box;
+  }
+
+/**********************************
+                MENU
+***********************************/
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.menu-link:hover{
+    background-color: var(--color-accent);
+    color: var(--color-neutral-light);
+    border-radius: 30px;
+}
+
+.menu-link.active {
+  background-color: var(--color-secondary);
+  color: var(--color-neutral-light);
+}
+
+/*Etilos para el logo*/
+.logo img{
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.logo{
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Amplia el logo un 20% */
+}
+
+
+/**********************************
+              PARALLAX
+***********************************/
+.parallax{
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/parallax_incio.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentParallax{
+  text-align: center;
+  z-index: 10;
+}
+
+.parallax-Title1{
+  font-size: 80px;
+  padding: 0 300px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.parallax-Title2{
+  font-size: 40px;
+  padding: 0 300px;
+  margin-bottom: 20px;
+}
+
+.parallax-Link{
+  color: var(--color-secondary);
+  background-color: var(--color-neutral-light);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.parallax-Link:hover{
+  color: var(--color-neutral-light);
+  background-color: var(--color-secondary);
+}
+
+
+/**********************************
+        FUNCIONES PRINCIPALES
+***********************************/
+/* === CONTENEDOR GENERAL === */
+.columns-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: var(--color-primary);
+}
+
+/* === COLUMNA === */
+.column-card {
+  background: var(--color-neutral-light);
+  padding: 2rem;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.column-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Títols */
+.column-card h3 {
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+/* Text */
+.column-card p {
+  color: var(--color-neutral-dark);
+  font-size: 1rem;
+  line-height: 1.6;
+}
