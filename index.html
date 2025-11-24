@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!--Vamos a crear la capselera-->
+     <!-- ============================
+                CAPSALERA
+   ============================ -->
     <header class="header">
 
         <!--Ponemos el logo-->
@@ -18,15 +20,17 @@
         <!--Creamos el menu-->
         <ul class="menu-list">
             <li class="menu-item"><a href="#" class="menu-link active">Inicio</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Añadir Jornada</a></li>
+            <li class="menu-item"><a href="añadir-Jornada.html" class="menu-link">Añadir Jornada</a></li>
             <li class="menu-item"><a href="#" class="menu-link">Lista de Jonadas</a></li>
             <li class="menu-item"><a href="#" class="menu-link">Estadisticas</a></li>
             <li class="menu-item"><a href="#" class="menu-link">Perfil Usuario</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Configuracion</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Contacto</a></li>
         </ul>
     </header>
 
-    <!--Vamos a crear el banner principal-->
+    <!-- ============================
+                PARALLAX
+   ============================ -->
     <section class="parallax">
         <div class="contentParallax">
             <h1 class="parallax-Title1">Bienvenido a SKYtrackerAPP</h1>
@@ -38,42 +42,165 @@
 
 
     <!-- ============================
-     Secció: Funciones Principales
+      FUNCIONES PRINCIPALES
    ============================ -->
-<section class="features" aria-labelledby="features-title">
+<section class="features">
   <div class="container">
     <h2 id="features-title">🏔️ FUNCIONES PRINCIPALES</h2>
     <p class="features-intro">
       Descubre todo lo que <strong>SkyTrackerAPP</strong> puede hacer por ti y lleva tu pasión por el esquí al siguiente nivel.
     </p>
 
-    <div class="features-container">
-      <article class="feature-card" aria-labelledby="f1-title">
-        <h3 id="f1-title">🎿 REGISTRA TUS DÍDAS DE ESQUÍ</h3>
-        <p>Guarda cada jornada con la estación visitada, condiciones, fotos y notas personales.</p>
-        <a href="#" class="btn-link">Saber más</a>
-      </article>
+    <div class="columns-section ">
+      <div class="column-card">
+        <h2 class="column-card-title">🎿 REGISTRA TUS DIAS DE ESQUÍ</h2>
+        <p class="column-card-text">Guarda cada jornada con la estación visitada, condiciones, fotos y notas personales.</p>
+        <a href="#" class="column-card-link">Saber más</a>
+      </div>
 
-      <article class="feature-card" aria-labelledby="f2-title">
-        <h3 id="f2-title">📈 VISUALIZA TU PROGRESO</h3>
-        <p>Consulta estadísticas como horas esquiadas, días totales y evolución de tu nivel.</p>
-        <a href="#" class="btn-link">Saber más</a>
-      </article>
+      <div class="column-card">
+        <h3 class="column-card-title">📈 VISUALIZA TU PROGRESO</h3>
+        <p class="column-card-text">Consulta estadísticas como horas esquiadas, días totales y evolución de tu nivel.</p>
+        <a href="#" class="column-card-link">Saber más</a>
+      </div>
 
-      <article class="feature-card" aria-labelledby="f3-title">
-        <h3 id="f3-title">👥 CONECTA CON TUS AMIGOS</h3>
-        <p>Comparte jornadas y sigue la actividad de otros esquiadores para motivarte y competir amistosamente.</p>
-        <a href="#" class="btn-link">Saber más</a>
-      </article>
+      <div class="column-card">
+        <h3 class="column-card-title">👥 CONECTA CON TUS AMIGOS</h3>
+        <p class="column-card-text">Comparte jornadas y sigue la actividad de otros esquiadores para motivarte y competir amistosamente.</p>
+        <a href="#" class="column-card-link">Saber más</a>
+      </div>
 
-      <article class="feature-card" aria-labelledby="f4-title">
-        <h3 id="f4-title">🏔️ DESCUBRE NUEVAS ESTACIONES</h3>
-        <p>Explora destinos recomendados y amplía tu mapa de aventuras en la nieve.</p>
-        <a href="#" class="btn-link">Saber más</a>
-      </article>
+      <div class="column-card">
+        <h3 class="column-card-title">🏔️ DESCUBRE NUEVAS ESTACIONES</h3>
+        <p class="column-card-text">Explora destinos recomendados y amplía tu mapa de aventuras en la nieve.</p>
+        <a href="#" class="column-card-link">Saber más</a>
+
+      </div>
     </div>
   </div>
 </section>
+
+
+ <!-- ============================
+              ESTADISTICAS
+   ============================ -->
+<section class="stats-section">
+  <h2 class="stats-title">Estadisticas</h2>
+
+  <div class="stats-grid">
+
+    <!--Registros-->
+    <div class="stat-card">
+      <span class="stat-number">120+</span>
+      <p class="stat-label">Rutas registradas</p>
+    </div>
+
+    <!--Picos-->
+    <div class="stat-card">
+      <span class="stat-number">45</span>
+      <p class="stat-label">Picos Logrados</p>
+    </div>
+
+    <!--Distancia-->
+    <div class="stat-card">
+      <span class="stat-number">2300Km</span>
+      <p class="stat-label">Distancia Total</p>
+    </div>
+
+    <!--Paises-->
+    <div class="stat-card">
+      <span class="stat-number">8</span>
+      <p class="stat-label">Paises explorados</p>
+    </div>
+
+  </div>
+</section>
+
+ <!-- ============================
+              TESTIMONIOS
+   ============================ -->
+<section class="testimonials-section">
+  <h2 class="testimonials-title">Testimonios</h2>
+
+  <div class="testimonials-container">
+
+    <div class="testimonial-card">
+      <h3 class="testimonial-card-title">⭐️ Testimonio 1</h3>
+      <p class="testimonial-card-text">“Desde que uso SkyTrackerAPP, llevo un control real de mis días de esquí. Me motiva ver mi progreso y mejorar cada temporada.”</p>
+      <span class="testimonial-author">— Carlos, 32 años</span>
+    </div>
+
+    <div class="testimonial-card">
+      <h3 class="testimonial-card-title">⭐️ Testimonio 2</h3>
+      <p class="testimonial-card-text">“Lo mejor es poder comparar mis jornadas con mis amigos. Cada subida se vuelve un pequeño desafío divertido.”</p>
+      <span class="testimonial-author">— Marta, 28 años</span>
+    </div>
+
+    <div class="testimonial-card">
+      <h3 class="testimonial-card-title">⭐️ Testimonio 3</h3>
+      <p class="testimonial-card-text">“Me encanta cómo registra automáticamente mis horas esquiadas. ¡Es perfecto para saber cuánto he mejorado desde el año pasado!”</p>
+      <span class="testimonial-author">— Javier, 41 años</span>
+    </div>
+
+    <div class="testimonial-card">
+      <h3 class="testimonial-card-title">⭐️ Testimonio 4</h3>
+      <p class="testimonial-card-text">“Gracias a las recomendaciones he descubierto estaciones que no conocía. Me ha abierto un montón de nuevas aventuras.”</p>
+      <span class="testimonial-author">— Laura, 24 años</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+ <!-- ============================
+                FOOTER
+   ============================ -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3 class="footer-logo">🏔️ SkyTrackerAPP</h3>
+      <p class="footer-description">Tu compañero ideal para registrar, analizar y disfrutar más tus días en la nieve.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4 class="footer-title">Enlaces útiles</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Funciones</a></li>
+        <li><a href="#">Estadísticas</a></li>
+        <li><a href="#">Testimonios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-socials">
+      <h4 class="footer-title">Síguenos</h4>
+      <div class="social-icons">
+        <a href="#" class="social-link">
+          <img src="img/intagram.png" alt="Instagram">
+        </a>
+        <a href="#" class="social-link">
+          <img src="img/twitter.png" alt="Twitter">
+        </a>
+        <a href="#" class="social-link">
+          <img src="img/tiktok.png" alt="TikTok">
+        </a>
+        <a href="#" class="social-link">
+          <img src="img/youtube.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 SkyTrackerAPP — Design by <strong>Pmorilla</strong></p>
+  </div>
+
+</footer>
 
 
 </body>

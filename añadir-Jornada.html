@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Jornada</title>
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+       <!-- ============================
+                CAPSALERA
+   ============================ -->
+    <header class="header">
+
+        <!--Ponemos el logo-->
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <!--Creamos el menu-->
+        <ul class="menu-list">
+            <li class="menu-item"><a href="index.html" class="menu-link">Inicio</a></li>
+            <li class="menu-item"><a href="#" class="menu-link active">Añadir Jornada</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Lista de Jonadas</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Estadisticas</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Perfil Usuario</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Contacto</a></li>
+        </ul>
+    </header>
+
+  <!-- ============================
+              FORMULARIO
+   ============================ -->
+    <section class="add-journey">
+        <div class="container">
+            <h2 class="add-journey-title">➕ Añadir Jornada</h2>
+            <p class="add-journey-intro">Registra fácilmente todos los detalles de tu día en la nieve.</p>
+
+            <form class="journey-form">
+                <!--FECHA-->
+                <div class="form-group">
+                    <label for="date">📅 Fecha</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <!--ESTACION-->
+                <div class="form-group">
+                    <label for="station">🏔️ Estación de esquí</label>
+                    <input type="station" id="station" name="station" placeholder="Ej: Grandvalira" required>
+                </div>
+
+                <!--HORAS ESQUIADAS-->
+                <div class="form-group">
+                    <label for="hours">⏱️ Horas esquiadas</label>
+                    <input type="number" id="hours" name="hours" min="0" placeholder="Ej: 5" required>
+                </div>
+
+                <!--CONDICIONES-->
+                <div class="form-group">
+                    <label for="conditions">🌤️ Condiciones</label>
+                    <select id="conditions" name="conditions" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="soleado">Soleado</option>
+                        <option value="nevando">Nevando</option>
+                        <option value="nublado">Nublado</option>
+                        <option value="ventoso">Ventoso</option>
+                        <option value="tormenta">Tormenta</option>
+                    </select>
+                </div>
+
+                <!--NIVEL-->
+                <div class="form-group">
+                    <label for="level">🎿 Nivel percibido del día</label>
+                    <select id="level" name="level">
+                        <option value="">Selecciona tu valoración</option>
+                        <option value="1">1 - Malo</option>
+                        <option value="2">2 - Regular</option>
+                        <option value="3">3 - Bien</option>
+                        <option value="4">4 - Muy Bien</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                </div>
+
+                <!--FOTOS-->
+                <div class="form-group">
+                    <label for="photos">📸 Fotos (opcional)</label>
+                    <input type="file" id="photos" name="photos" accept="image/*" multiple>
+                </div>
+
+                <!--NOTAS-->
+                <div class="form-group">
+                    <label for="notes">📝 Notas</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Escribe aquí tus impresiones del día..."></textarea>
+                </div>
+
+                <!--BOTON SUBMIT-->
+                <button type="submit" class="btn-submit">Guardar Jornada</button>
+
+            </form>
+        </div>
+    </section>
+
+
+ <!-- ============================
+                FOOTER
+   ============================ -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3 class="footer-logo">🏔️ SkyTrackerAPP</h3>
+      <p class="footer-description">Tu compañero ideal para registrar, analizar y disfrutar más tus días en la nieve.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4 class="footer-title">Enlaces útiles</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Funciones</a></li>
+        <li><a href="#">Estadísticas</a></li>
+        <li><a href="#">Testimonios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-socials">
+      <h4 class="footer-title">Síguenos</h4>
+      <div class="social-icons">
+        <a href="#" class="social-link">
+          <img src="img/intagram.png" alt="Instagram">
+        </a>
+        <a href="#" class="social-link">
+          <img src="img/twitter.png" alt="Twitter">
+        </a>
+        <a href="#" class="social-link">
+          <img src="img/tiktok.png" alt="TikTok">
+        </a>
+        <a href="#" class="social-link">
+          <img src="img/youtube.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 SkyTrackerAPP — Design by <strong>Pmorilla</strong></p>
+  </div>
+
+</footer>
+</body>
+</html>
