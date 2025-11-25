@@ -20,11 +20,11 @@
         <!--Creamos el menu-->
         <ul class="menu-list">
             <li class="menu-item"><a href="index.html" class="menu-link">Inicio</a></li>
-            <li class="menu-item"><a href="#" class="menu-link active">Añadir Jornada</a></li>
+            <li class="menu-item"><a href="añadir-Jornada.html" class="menu-link">Añadir Jornada</a></li>
             <li class="menu-item"><a href="#" class="menu-link">Lista de Jonadas</a></li>
             <li class="menu-item"><a href="#" class="menu-link">Estadisticas</a></li>
             <li class="menu-item"><a href="#" class="menu-link">Perfil Usuario</a></li>
-            <li class="menu-item"><a href="#" class="menu-link">Contacto</a></li>
+            <li class="menu-item"><a href="#" class="menu-link active">Contacto</a></li>
         </ul>
     </header>
 
@@ -32,12 +32,87 @@
             TITULO I DESCRIPCION
    ============================ -->
    <section class="contact">
+  <div class="container">
 
     <h2 class="contact-title">📩 Contacta con Nosotros</h2>
     <p class="contact-subtitle">
       ¿Tienes dudas, sugerencias o quieres colaborar? Estaremos encantados de ayudarte.
     </p>
-   </section>
+
+    <div class="contact-wrapper">
+
+      <!-- ===== INFORMACIÓN DE CONTACTO ===== -->
+      <div class="contact-info">
+        <h3 class="contact-info-title">Información de Contacto</h3>
+
+        <ul class="contact-list">
+          <li><strong>Email:</strong> skytracker.app@gmail.com</li>
+        </ul>
+
+        <h3 class="contact-info-title">Síguenos</h3>
+
+        <div class="contact-social-icons">
+          <a href="#" class="contact-social-link">
+            <img src="img/intagram.png" alt="Instagram">
+          </a>
+          <a href="#" class="contact-social-link">
+            <img src="img/twitter.png" alt="Twitter">
+          </a>
+          <a href="#" class="contact-social-link">
+            <img src="img/tiktok.png" alt="TikTok">
+          </a>
+          <a href="#" class="contact-social-link">
+            <img src="img/youtube.png" alt="YouTube">
+          </a>
+        </div>
+      </div>
+
+      <!-- ===== FORMULARIO ===== -->
+      <div class="contact-form">
+        <h3 class="contact-form-title">Envíanos un Mensaje</h3>
+
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Motivo del mensaje">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Escribe aquí tu mensaje"></textarea>
+          </div>
+
+          <button type="submit" class="btn-send">Enviar</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- ===== FAQ ===== -->
+    <div class="contact-faq">
+      <h3 class="faq-title">Preguntas Frecuentes</h3>
+
+      <ul class="faq-list">
+        <li><strong>¿La app es gratuita?</strong> Sí, todas las funciones básicas lo son.</li>
+        <li><strong>¿Puedo añadir amigos?</strong> Sí, podrás conectar y compartir jornadas.</li>
+        <li><strong>¿Cómo registro mis días de esquí?</strong> Desde la sección “Añadir Jornada”.</li>
+        <li><strong>¿Dónde puedo ver mis estadísticas?</strong> En la sección “Estadísticas”.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- ============================
                 REDES SOCIALES
